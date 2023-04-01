@@ -9,7 +9,7 @@ const express = require('express')
     , fs = require('fs')
     , { commentRoutes, photoRoutes, userRoutes } = require('../app/routes');
 
-const uploadDir = './uploads';
+const uploadDir = '../uploads';
 if (!fs.existsSync(uploadDir)){
     fs.mkdirSync(uploadDir);
     fs.mkdirSync(uploadDir + '/imgs');
